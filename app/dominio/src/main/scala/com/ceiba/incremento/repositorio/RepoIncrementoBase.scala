@@ -2,8 +2,8 @@ package dominio.src.main.scala.com.ceiba.incremento.repositorio
 
 import akka.Done
 import cats.data.EitherT
+import dominio.src.main.scala.com.ceiba.incremento.excepcion.MensajeError
 import dominio.src.main.scala.com.ceiba.incremento.modelo.dto.{EliminarIncrementoDTO, IncrementoDTO}
-import infraestructura.src.main.scala.com.ceiba.incremento.MensajeError
 import monix.eval.Task
 
 import scala.concurrent.Future

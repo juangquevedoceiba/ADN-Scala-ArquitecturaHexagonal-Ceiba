@@ -6,8 +6,7 @@ import dominio.src.main.scala.com.ceiba.incremento.modelo.dto.{EliminarIncrement
 import play.api.db.slick.{DatabaseConfigProvider, HasDatabaseConfigProvider}
 import play.api.mvc.{AbstractController, ControllerComponents}
 import slick.jdbc.JdbcProfile
-import dominio.src.main.scala.com.ceiba.incremento.excepcion.ValidarArgumento
-import infraestructura.src.main.scala.com.ceiba.incremento.MensajeError
+import dominio.src.main.scala.com.ceiba.incremento.excepcion.{MensajeError, ValidarArgumento}
 
 import javax.inject.Inject
 import scala.concurrent.{ExecutionContext, Future}

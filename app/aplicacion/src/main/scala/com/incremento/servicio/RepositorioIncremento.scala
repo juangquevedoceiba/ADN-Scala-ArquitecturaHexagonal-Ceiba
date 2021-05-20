@@ -2,10 +2,10 @@ package aplicacion.src.main.scala.com.incremento.servicio
 
 import akka.Done
 import cats.data.EitherT
+import dominio.src.main.scala.com.ceiba.incremento.excepcion.MensajeError
 import dominio.src.main.scala.com.ceiba.incremento.modelo.dto.{EliminarIncrementoDTO, IncrementoDTO}
 import dominio.src.main.scala.com.ceiba.incremento.repositorio.RepoIncrementoBase
 import dominio.src.main.scala.com.ceiba.incremento.servicio.CalcularMontoFinal
-import infraestructura.src.main.scala.com.ceiba.incremento.MensajeError
 import infraestructura.src.main.scala.com.ceiba.incremento.adaptador.dao.MapeoIncremento
 import monix.eval.Task
 import play.api.db.slick.{DatabaseConfigProvider, HasDatabaseConfigProvider}

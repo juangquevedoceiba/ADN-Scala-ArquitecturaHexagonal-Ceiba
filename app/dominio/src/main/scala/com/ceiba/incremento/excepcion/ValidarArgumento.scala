@@ -2,8 +2,6 @@ package dominio.src.main.scala.com.ceiba.incremento.excepcion
 
 import akka.Done
 import aplicacion.src.main.scala.com.incremento.servicio.Constantes
-
-import infraestructura.src.main.scala.com.ceiba.incremento.MensajeError
 import play.api.mvc.{Action, AnyContent}
 
 import java.text.{ParseException, SimpleDateFormat}
