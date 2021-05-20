@@ -11,6 +11,11 @@ libraryDependencies += guice
 libraryDependencies += "org.scalatestplus.play" %% "scalatestplus-play" % "5.0.0" % Test
 libraryDependencies += "com.typesafe.play" %% "play-slick" % "4.0.2"
 libraryDependencies += "org.xerial" % "sqlite-jdbc" % "3.28.0"
+libraryDependencies += "javax.validation" % "validation-api" % "2.0.1.Final"
+libraryDependencies += "org.typelevel" %% "cats-core" % "2.6.1"
+libraryDependencies += "io.monix" %% "monix" % "3.4.0"
+
+
 // Adds additional packages into Twirl
 //TwirlKeys.templateImports += "ceiba.controllers._"
 

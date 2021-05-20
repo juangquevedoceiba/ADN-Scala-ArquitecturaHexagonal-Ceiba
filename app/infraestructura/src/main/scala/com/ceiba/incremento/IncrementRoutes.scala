@@ -7,12 +7,12 @@ import play.api.routing.sird._
 
 import javax.inject.Inject
 
-class IncrementRoutes @Inject()( consulta:ConsultaControladorIncremento, comando: ComandoControladorIncremento) extends SimpleRouter {
+class IncrementRoutes @Inject()( consulta :ConsultaControladorIncremento, comando: ComandoControladorIncremento) extends SimpleRouter {
   override def routes: Routes = {
-    case GET(p"/") => consulta.getIncrementos
-    case GET(p"/$id") => consulta.getIncremento(id: String)
+    case GET(p"/") => consulta.consultaIncrementos
+    case GET(p"/${int(id)}") => consulta.consultarIncremento(id: Int)
     case POST(p"/") => comando.creaIncremento
-    case PATCH(p"/$id") => comando.actualizaIncremento(id: String)
-    case DELETE(p"/$id") => comando.eliminaIncremento(id: String)
+    case POST(p"/${int(id)}") => comando.actualizaIncremento(id: Int)
+    case DELETE(p"/") => comando.eliminaIncremento()
   }
 }
